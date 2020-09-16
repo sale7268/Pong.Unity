@@ -7,11 +7,14 @@ public class Paddle : MonoBehaviour
     public bool isPaddleLeft;
     public float speed = 5f;
     public Vector3 startPosition;
+    public Vector3 startScale;
 
     // Start is called before the first frame update
     void Start()
     {
         startPosition = transform.position;
+        startScale = transform.localScale;
+
     }
 
     // Update is called once per frame
@@ -30,5 +33,6 @@ public class Paddle : MonoBehaviour
     public void Reset()
     {
         transform.position = startPosition;
+        transform.localScale = startScale;
     }
 }

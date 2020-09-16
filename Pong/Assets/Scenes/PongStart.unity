@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -317,6 +317,7 @@ MonoBehaviour:
   isPaddleLeft: 0
   speed: 13
   startPosition: {x: 0, y: 0, z: 0}
+  startScale: {x: 0, y: 0, z: 0}
 --- !u!1 &587247138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5741,9 +5742,9 @@ RectTransform:
   m_Father: {fileID: 723995167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.6, y: 90.8}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 18.6, y: -81.2}
   m_SizeDelta: {x: 227.52454, y: 48.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226876961
@@ -6103,7 +6104,12 @@ MonoBehaviour:
   speed: 6
   startPosition: {x: 0, y: 0, z: 0}
   rb: {fileID: 1312246550}
-  impactSound: {fileID: 1312246551}
+  impactSound: {fileID: 0}
+  clip1: {fileID: 8300000, guid: 30f9a8847f2e6a64f817a0d3e5aae4cb, type: 3}
+  clip2: {fileID: 8300000, guid: f2eac3f19d097cb44989ed1d90da672c, type: 3}
+  leftPaddleHitCount: 0
+  rightPaddleHitCount: 0
+  startVelocity: {x: 0, y: 0, z: 0}
 --- !u!54 &1312246550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6130,7 +6136,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 30f9a8847f2e6a64f817a0d3e5aae4cb, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -6248,9 +6254,9 @@ RectTransform:
   m_Father: {fileID: 723995167}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 196.2, y: 92.8}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 196.2, y: -79.2}
   m_SizeDelta: {x: 229.01086, y: 46.280212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737079245
@@ -6617,6 +6623,7 @@ MonoBehaviour:
   isPaddleLeft: 1
   speed: 13
   startPosition: {x: 0, y: 0, z: 0}
+  startScale: {x: 0, y: 0, z: 0}
 --- !u!1 &2014933750
 GameObject:
   m_ObjectHideFlags: 0

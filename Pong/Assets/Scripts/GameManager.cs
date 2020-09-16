@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         {
             Player1Score++;
             Player1Text.GetComponent<TextMeshProUGUI>().text = Player1Score.ToString();
+            Player1Text.GetComponent<TextMeshProUGUI>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); ;
         }
         else
         {
@@ -47,6 +48,7 @@ public class GameManager : MonoBehaviour
         {
             Player2Score++;
             Player2Text.GetComponent<TextMeshProUGUI>().text = Player2Score.ToString();
+            Player2Text.GetComponent<TextMeshProUGUI>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); ;
         }
         else
         {
